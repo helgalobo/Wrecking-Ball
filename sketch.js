@@ -27,11 +27,11 @@ function setup(){
     
     box8= new Box(500,425,50,50,"magenta");
   
-    for(var i=0;i<10;i++)
+    for(var i=0;i<=10;i++)
     boxes1[i]=new Box(600,height-50*i,50,50,rgb(i*100%150,0,0));
-    for(var i=0;i<10;i++)
+    for(var i=0;i<=10;i++)
     boxes2[i]=new Box(680,height-50*i,50,50,rgb(0,i*100%250,0));
-    for(var i=0;i<10;i++)
+    for(var i=0;i<=10;i++)
     boxes3[i]=new Box(760,height-50*i,50,50,rgb(0,0,i*100%250));
     ball = new Ball(380,350,80,80);
 
@@ -61,7 +61,7 @@ function draw(){
  
     
   
-    for(var i=0;i<10;i++)
+    for(var i=0;i<=10;i++)
     {   boxes1[i].display();
         boxes2[i].display();
         boxes3[i].display();}
