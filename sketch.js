@@ -33,7 +33,7 @@ function setup(){
     boxes2[i]=new Box(680,height-50*i,50,50,rgb(0,i*100%250,0));
     for(var i=0;i<10;i++)
     boxes3[i]=new Box(760,height-50*i,50,50,rgb(0,0,i*100%250));
-    ball = new Ball(380,350,80,80);
+    ball = new Ball(380,350,40);
 
     //rope
     rope1=new Rope(ball.body,{x:400, y:100})
