@@ -3,7 +3,7 @@ class Rope {
       var options = {
         bodyA: bodyA,
         pointB: pointB,
-        stiffness: 0.004,
+        stiffness: 0.8,
         length: 350,
       };
   
