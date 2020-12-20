@@ -6,7 +6,7 @@ const Constraint=Matter.Constraint;
 
 var engine, world;
 var ground, ball;
-var box1,box2,box3,box4,box5,box6,box7,box8,box9;
+var box1,box2,box3,box4,box5,box6,box7,box8,box9,box10;
 var rope1;
 var boxes1=[];
 var boxes2=[];
@@ -26,6 +26,7 @@ function setup(){
     box5= new Box(500,475,50,50,"green");
     
     box8= new Box(500,425,50,50,"magenta");
+    box10= new Box(500,450,50,50,"pink");
   
     for(var i=0;i<=10;i++)
     boxes1[i]=new Box(600,height-50*i,50,50,rgb(i*100%150,0,0));
@@ -56,6 +57,7 @@ function draw(){
      box2.display();   
      box5.display();  
      box8.display();
+    box10.display();
      rope1.display();
      ball.display();
  
