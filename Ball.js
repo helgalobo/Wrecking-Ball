@@ -1,12 +1,11 @@
 class Ball {
-  constructor(x, y, width, height, angle) {
+  constructor(x, y, radius) {
     var options = { 
       density: 1, 
       frictionAir: 0.005};
 
-    this.body = Bodies.rectangle(x, y, width, height, options);
-    this.width = width;
-    this.height = height;
+    this.body = Bodies.circle(x, y, radius, options);
+   this.radius=radius;
     World.add(world, this.body);
   }
 
@@ -15,7 +14,8 @@ class Ball {
     push();
     translate(this.body.position.x, this.body.position.y);
     rotate(angle);
-    ellipse(0, 0, this.width, this.height);
+    ellipseMode(RADIUS);
+    ellipse(0, 0, this.radius, this.radius);
     pop();
   }
 }
